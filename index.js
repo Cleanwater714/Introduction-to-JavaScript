@@ -1,10 +1,11 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-var vote = 'VotingAge';
-console.log(vote);
-if (age>18){
-    console.log('You can vote');
+let votingage = 18;
+if (votingage > 18){
+    console.log('You can vote')
+} else {
+    console.log('You shall not vote')
 }
 
 
@@ -24,9 +25,7 @@ if(adult === 'short'){
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-var z = 1999;
-z.toString();
-(1999).toString();
+Number(new Date("1999"));  
 
 
 
@@ -35,7 +34,7 @@ z.toString();
 function multiply(a, b){
     return a * b;
 }
-console.log(multiply(a, b));
+console.log(multiply(3, 3));
 
 
 
@@ -44,8 +43,8 @@ console.log(multiply(a, b));
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-fucntion multiply(1, 7){
-    return 1 * 7;
+function multiply(a, b){
+    return a * b;
 }
 
 console.log(multiply(1, 7));
@@ -70,6 +69,25 @@ console.log(multiply(1, 7));
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+let adultdog = 'adult';
+
+if(adultdog === '<5lbs'){
+    console.log('5% of bw')
+}else if(adultdog === '6-10lbs'){
+    console.log('4% of bw')
+}else if(adultdog === '11-15lbs'){
+    console.log('3% of their bw')
+}else (adultdog === '<15lbs')
+    console.log('2% of bw')
+
+let puppy = 'pup';
+
+if(puppy === '2-4months'){
+    console.log('10% of bw')
+}else if(puppy === '4-7months'){
+    console.log('5% of their body weight')
+}else (puppy === '7-12months')
+    console.log('4% of bw')
 
 
 
@@ -81,7 +99,18 @@ console.log(multiply(1, 7));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+var userChoice = prompt ("Do you choose rock, paper or scissors?");
+
+var computerChoice = Math.random();
+console.log(computerChoice);
+
+if (computerChoice <=0.33) {
+    "rock";
+} else if (computerChoice <=0.66) {
+    "paper";
+} else {
+    "scissors";
+}
   
 
 /************************************************************** Task 5 **************************************************************/
@@ -107,7 +136,11 @@ function LengthConverter(valNum) {
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+let i;
 
+for (i = 0; i < annoyingsong.length; i++) {
+    text +=  bottlesofsoda [i] + "<br>";
+}
 
 
 
@@ -120,8 +153,22 @@ function LengthConverter(valNum) {
 //60s should be D 
 //and anything below 60 should be F
   
+var userChoice = prompt ("Input your test percentage");
 
-  
+var computerChoice = Math.random();
+console.log(computerChoice);
+
+
+if (computerChoice >=90) {
+    "A";
+} else if (computerChoice >=80) {
+    "B";
+} else if (computerChoice >=70) {
+    "C";
+} else if (compuerChoice >=60) {
+    "D";
+} else (computerChoice >=50) 
+    "F";
   
 
 /************************************************************** Stretch **************************************************************/
